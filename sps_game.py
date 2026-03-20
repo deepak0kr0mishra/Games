@@ -7,6 +7,33 @@ def usrChs ():
     user = int(input(":"))
     return user
 
+def game(User , computer):
+    if(Uchoice == Cchoice):
+        print("Game draw")
+
+    elif(Uchoice == 1):
+        if(Cchoice == 3):
+            print("User wins")
+        else:
+            print("Computer wins")
+            
+    elif(Uchoice == 2):
+        if(Cchoice == 1):
+            print("User wins")
+        else:
+            print("Computer wins")
+            
+    elif(Uchoice == 3):
+        if(Cchoice == 2):
+            print("User wins")
+        else:
+            print("Computer wins")
+
+    #Test case
+    print(f"Computer choice was {options[Cchoice-1]}")
+    print(f"User choice was {options[Uchoice-1]}")
+
+
 
 
 #Taking user input 
@@ -15,27 +42,5 @@ Uchoice = usrChs()
 #Getting computer choice 
 Cchoice = random.randint(1, 3)
 
-if(Uchoice == Cchoice):
-    print("Game draw")
 
-elif(Uchoice == 1):
-    if(Cchoice == 3):
-        print("User wins")
-    else:
-        print("Computer wins")
-        
-elif(Uchoice == 2):
-    if(Cchoice == 1):
-        print("User wins")
-    else:
-        print("Computer wins")
-        
-elif(Uchoice == 3):
-    if(Cchoice == 2):
-        print("User wins")
-    else:
-        print("Computer wins")
-
-#Test case
-print(f"Computer choice was {options[Cchoice-1]}")
-print(f"User choice was {options[Uchoice-1]}")
+game(Uchoice , Cchoice)
