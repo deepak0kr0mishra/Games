@@ -2,9 +2,12 @@ import random;
 
 options = ["Stone" , "Paper" , "Scissors"]
 
+
 def usrChs ():
-    print("1. For Stone \n2. For paper \n3. For Scissors")
-    user = int(input(":"))
+    user = 0 
+    while(user < 1 or user > 3 ):
+        print("1. For Stone \n2. For paper \n3. For Scissors")
+        user = int(input(":"))
     return user
 
 def game(Uchoice , Cchoice):
