@@ -7,6 +7,8 @@ def usrChs ():
     user = int(input(":"))
     return user
 
+
+
 #Taking user input 
 Uchoice = usrChs()
 
@@ -35,5 +37,5 @@ elif(Uchoice == 3):
         print("Computer wins")
 
 #Test case
-# print(f"Computer choice was {options[Cchoice-1]}")
-# print(f"User choice was {options[Uchoice-1]}")
+print(f"Computer choice was {options[Cchoice-1]}")
+print(f"User choice was {options[Uchoice-1]}")
