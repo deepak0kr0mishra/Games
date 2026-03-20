@@ -7,7 +7,7 @@ def usrChs ():
     user = int(input(":"))
     return user
 
-def game(User , computer):
+def game(Uchoice , Cchoice):
     if(Uchoice == Cchoice):
         print("Game draw")
 
