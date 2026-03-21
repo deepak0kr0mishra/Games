@@ -1,4 +1,4 @@
-import random;
+import random
 
 options = ["Stone" , "Paper" , "Scissors"]
 
@@ -33,9 +33,11 @@ def game(Uchoice , Cchoice):
         else:
             print("Computer wins")
 
-    #Test case
+    #Final results
     print(f"Computer choice was {options[Cchoice-1]}")
     print(f"User choice was {options[Uchoice-1]}")
+    
+    print("***")
 
 
 end = "y"
@@ -50,4 +52,4 @@ while(end != "n"):
 
     game(Uchoice , Cchoice)
     
-    end = input("Want to repaly \ny for yes \nn for no ")
+    end = input("Want to repaly \ny for yes n for no ")
