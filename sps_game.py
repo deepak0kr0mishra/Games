@@ -10,6 +10,7 @@ def usrChs ():
         user = int(input(":"))
     return user
 
+#Game Logic
 def game(Uchoice , Cchoice):
     if(Uchoice == Cchoice):
         print("Game draw")
@@ -37,13 +38,16 @@ def game(Uchoice , Cchoice):
     print(f"User choice was {options[Uchoice-1]}")
 
 
+end = "y"
+
+while(end != "n"):
+    #Taking user input 
+    Uchoice = usrChs()
+
+    #Getting computer choice 
+    Cchoice = random.randint(1, 3)
 
 
-#Taking user input 
-Uchoice = usrChs()
-
-#Getting computer choice 
-Cchoice = random.randint(1, 3)
-
-
-game(Uchoice , Cchoice)
+    game(Uchoice , Cchoice)
+    
+    end = input("Want to repaly \ny for yes \nn for no ")
