@@ -32,7 +32,7 @@ function createUser(){
     localStorage.setItem(usersKey, JSON.stringify(users));
     localStorage.setItem(currentUserKey, userKey);
 
-    document.getElementById('welcome').innerText = `${currentUser.name}`;
+    document.getElementById('welcome').innerText = `${currentUser.name} `;
     showScore();
     
 }
@@ -44,7 +44,7 @@ if (savedUser) {
     currentUser = users[savedUser] || null;
 
     if (currentUser) {
-        document.getElementById('welcome').innerText = `${currentUser.name}`;
+        document.getElementById('welcome').innerText = `${currentUser.name} - ${currentUser.wins}`;
         showScore();
     }
 } else {
@@ -53,7 +53,7 @@ if (savedUser) {
     if (oldSavedUser) {
         currentUser = oldSavedUser;
         saveCurrentUser();
-        document.getElementById('welcome').innerText = `${currentUser.name}`;
+        document.getElementById('welcome').innerText = `${currentUser.name} - ${currentUser.wins}`;
         showScore();
     }
 }

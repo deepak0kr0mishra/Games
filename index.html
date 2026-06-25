@@ -9,39 +9,38 @@
 
     <div class="bg-cyan-800 p-4 text-white mx-6 rounded-2xl shadow-md flex flex-rows justify-between">
         <p class="text-center text-3xl ">Stone Paper and Scissors</p>
-        <p id="welcome"></p>
+        <p class="text-5 " id="welcome"></p>
     </div>
     
 
-    <div class="bg-slate-00 p-5 flex flex-row gap-6 justify-between">
+    <div class="bg-slate-700/30 p-5 flex flex-row gap-6 justify-between">
         <div class="flex flex-col gap-3">
-            <button class="bg-slate-900 hover:bg-slate-700 p-3 rounded " onclick="
+            <button class="bg-slate-950 hover:bg-slate-700 p-3 rounded " onclick="
                 playGame('rock');
                 ">Stone</button>
 
-            <button class="bg-slate-900 hover:bg-slate-700 p-3 rounded " onclick="
+            <button class="bg-slate-950 hover:bg-slate-700 p-3 rounded " onclick="
                 playGame('paper') ;
                 ">Paper</button>
 
-            <button class="bg-slate-900 hover:bg-slate-700 p-3 rounded " onclick="
+            <button class="bg-slate-950 hover:bg-slate-700 p-3 rounded " onclick="
                 playGame('scissor');
                 ">Scissors</button>
         </div>
 
-        <div>
+        <div class="text-2xl">
             <p id="user"></p>
             <p id="computer"></p>
             <p id="result"></p>
-            <p id="score"></p>
+            <p class="text-3xl" id="score"></p>
         </div>
     </div>
 
    
 
-    <div class="">
-        <input class="text-slate-900 rounded" type="text" placeholder="Username" id="username">
-        <button class="" onclick="createUser()">Login</button>
-        
+    <div class="flex justify-center gap-3">
+        <input class="text-black rounded p-3 hover:text-cyan-700" type="text" placeholder="Username" id="username">
+        <button class="bg-slate-950 hover:bg-slate-700 p-3 rounded" onclick="createUser()">Login</button>
     </div>
     <script src="main.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
